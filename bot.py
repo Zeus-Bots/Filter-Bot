@@ -4,7 +4,7 @@ import pymongo
 
 # Define the actual values directly in the code (not recommended for production)
 TELEGRAM_BOT_TOKEN = ""
-API_ID = ""
+API_ID = 
 API_HASH = ""
 AUTH_USERS = {""}  # Add user IDs in a set
 DATABASE_URI = ""
