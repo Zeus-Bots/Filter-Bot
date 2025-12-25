@@ -3,22 +3,22 @@ import time
 
 class Config(object):
     # Get a bot token from botfather, renamed to avoid conflicts
-    TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", None)
+    TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", 7798706143:AAHsAm7SJEswWq4szQQSgK6D5Jb-aFkxDig)
     if not TELEGRAM_BOT_TOKEN:
         raise ValueError("Error: TELEGRAM_BOT_TOKEN is not set. Please check your environment variables.")
 
     # Get from my.telegram.org
-    API_ID = int(os.environ.get("API_ID", 0))
+    API_ID = int(os.environ.get("API_ID", 22884130))
     if not API_ID:
         raise ValueError("Error: API_ID is not set. Please check your environment variables.")
 
     # Get from my.telegram.org
-    API_HASH = os.environ.get("API_HASH", None)
+    API_HASH = os.environ.get("API_HASH", a69e8b16dac958f1bd31eee360ec53fa)
     if not API_HASH:
         raise ValueError("Error: API_HASH is not set. Please check your environment variables.")
 
     # Database URL from MongoDB Atlas
-    DATABASE_URI = os.environ.get("DATABASE_URI", None)
+    DATABASE_URI = os.environ.get("DATABASE_URI", mongodb+srv://Fugui:tianlu@cluster0.6hyrp0r.mongodb.net/?appName=Cluster0)
     if not DATABASE_URI:
         raise ValueError("Error: DATABASE_URI is not set. Please check your environment variables.")
 
@@ -26,12 +26,12 @@ class Config(object):
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
     # ID of users that can use the bot commands
-    AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "7840980054").split())
     if not AUTH_USERS:
         print("Warning: AUTH_USERS is not set. Bot commands may not work properly.")
 
     # To save user details (useful for getting user info and total user counts)
-    SAVE_USER = os.environ.get("SAVE_USER", "no").lower()
+    SAVE_USER = os.environ.get("SAVE_USER", "yes").lower()
 
     # Heroku API key to check dyno status
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
