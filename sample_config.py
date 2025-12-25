@@ -8,7 +8,7 @@ class Config(object):
         raise ValueError("Error: TELEGRAM_BOT_TOKEN is not set. Please check your environment variables.")
 
     # Get from my.telegram.org
-    API_ID = os.environ.get("API_ID", "22884130")
+    API_ID = os.environ.get("API_ID", 22884130)
     try:
         API_ID = int(API_ID) if API_ID else 0
     except ValueError:
